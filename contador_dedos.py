@@ -1,4 +1,5 @@
 try:
+    ggwgwegwegewggwegwe
     import cv2
     import mediapipe as mp
     import time
@@ -10,7 +11,6 @@ try:
     mpDwaw = mp.solutions.drawing_utils
 
     while True:
-        
         success, img = video.read()
         frameRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
         results = Hands.process(frameRGB)
