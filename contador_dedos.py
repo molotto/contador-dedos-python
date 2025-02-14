@@ -6,6 +6,8 @@ try:
 
     #^ liga a câmera
     video = cv2.VideoCapture(0)
+    if not video.isOpened():
+        raise RuntimeError("Erro ao acessar a câmera.")
 
     hands = mp.solutions.hands
     Hands = hands.Hands(max_num_hands=1)
